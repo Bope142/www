@@ -1,0 +1,116 @@
+.container__footer {
+    margin-top: auto;
+    position: relative;
+    height: auto;
+    @include flex_box(column);
+    color: $color__white;
+}
+
+.footer__wave {
+    position: relative;
+    overflow: hidden !important;
+    height: 100px;
+
+    & .linear__wave {
+        position: absolute;
+        z-index: 5;
+    }
+
+    & .color__wave {
+        position: absolute;
+        top: 10px;
+        z-index: 6;
+    }
+}
+
+.footer__content {
+    flex: none;
+    height: auto;
+    flex: none;
+    background: #2E2C2C;
+    z-index: 2000;
+    padding: 0 $padding__section 15px $padding__section;
+    @include flex_box(column, flex-start, strecth, 0);
+
+    & p {
+        align-self: center;
+        text-align: center;
+    };
+
+    & .footer__infos {
+        @include flex_box(row, space-between, strecth, 25px);
+        & .footer__contact {
+            align-self: center;
+            @include flex_box(column, flex-start, strecth, 35px);
+            & h1 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 75px;
+                font-family: $font__Bold;
+            };
+            & .links__contact {
+                @include flex_box(row, center, strecth, 15px);
+            }
+        };
+        .footer__nav {
+    @include flex_box(row, flex-start, strecth, 35px);
+
+    & .navigation {
+        @include flex_box(column, flex-start, strecth, 25px);
+
+        & .nav__tiltle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+        };
+        & ul {
+            @include flex_box(column, flex-start, strecth, 10px);
+        };
+        & ul * {
+            text-decoration: none !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-size: 14px !important;
+            line-height: 17px !important;
+            color: rgba(255, 255, 255, 0.82) !important;
+        }
+    }
+}
+    }
+}
+
+
+#termes {
+    flex: none;
+    & .footer__icons {
+        display: flex;
+        position: relative;
+    }
+}
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section:20px;
+    .footer__content {
+      padding: 0 $padding__section 15px $padding__section;
+    }
+
+}
+@media only screen and (max-width: 1130px) {
+    .footer__infos {
+       flex-direction: column !important;
+       grid-gap:50px;
+    }
+    .footer__contact {
+       align-self: flex-start !important;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .footer__nav {
+      display: grid !important;
+      grid-template-columns:repeat(2,1fr) !important;
+    }
+
+}

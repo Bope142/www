@@ -1,0 +1,72 @@
+@mixin center_abosulte($top_p:50%, $left_p:50%, $right_p:-50%, $bottom_p:-50%) {
+    position: absolute;
+    top: $top_p;
+    left: $left_p;
+    transform: translate($right_p, $bottom_p);
+}
+
+@mixin shadow_text {
+    text-shadow: 1px 1px 1px $color__black;
+}
+
+@mixin flex_box($direction:row, $justifys: flex-start, $items:strecth, $gap:0px) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifys;
+    align-items: $items;
+    grid-gap: $gap;
+}
+
+@mixin title_font {
+    color: $color__white;
+    font-family: $font__Bold;
+    flex: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+
+}
+
+@mixin grid_display($cols:1fr, $gap:0px) {
+    display: grid;
+    grid-template-columns: $cols;
+    grid-gap: $gap;
+}
+
+@mixin font__text {
+    font-family: $font__regular;
+    font-size: 1.0rem;
+}
+
+@mixin config__section {
+    @include flex_box(column, center, strecth, 50px);
+    height: auto;
+    overflow: hidden;
+    flex: none;
+    padding: $padding_top_bott_section $padding__section;
+}
+
+@mixin space__link {
+    grid-gap: 25px;
+}
+
+@mixin link__style {
+    color: $color__white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $font__Light;
+}
+
+@mixin config__container_section{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+    overflow: hidden;
+    height: auto;
+    padding: 50px $padding__section;
+    margin-top: 100px;
+    align-items:center;
+}

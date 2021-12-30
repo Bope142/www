@@ -1,0 +1,110 @@
+@import 'mixin.scss';
+
+.container__testimonials {
+    @include config__section;
+    background: $color__white;
+
+    & .title__section__container p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.017em;
+
+        color: rgba(0, 0, 0, 0.54);
+
+    }
+
+    & .testimonials_content {
+        @include grid_display(repeat(3, 1fr), 50px);
+        overflow: hidden;
+        height: auto;
+        padding: 20px 10px;
+
+
+        & .testimonial {
+            @include flex_box(column, flex-start, strecth, 20px);
+            padding: 10px;
+            background: $color__white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            border-radius: 10px;
+
+            & .testimonial_users {
+                flex: none;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                @include flex_box(column, center, center, 0);
+                overflow: hidden;
+
+                & img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+
+            }
+
+            & .testimonial__details {
+                font-style: italic;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.017em;
+
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+
+}
+
+.slide__indicator {
+    align-self: center;
+    @include flex_box(row, flex-start, strecth, 20px);
+
+    & .indicator {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: rgba(0, 0, 0, 0.24);
+    }
+
+    ;
+
+    & .indicator_active {
+        background: rgba(0, 0, 0, 0.94);
+    }
+}
+
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section: 20px;
+
+    .container__testimonials {
+        padding: $padding_top_bott_section $padding__section;
+    }
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .testimonials_content {
+        grid-template-columns: repeat(2, 1fr) !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .testimonials_content {
+        grid-template-columns: 1fr !important;
+        justify-content: center !important;
+    }
+}

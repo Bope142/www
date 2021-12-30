@@ -1,0 +1,104 @@
+@import 'mixin.scss';
+
+.container__advantage {
+    @include config__section;
+    background: $color__bg_section;
+
+    & .title__section__container {
+        & .title__section {
+            color: $color__white;
+        }
+
+        ;
+
+        & p {
+            color: $color__white;
+            font-family: $font__regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.017em;
+        }
+    }
+
+    ;
+
+    & .advantages {
+        @include grid_display(repeat(3, 1fr), 150px);
+        justify-content: center;
+        align-items: center;
+
+        & .box__advantages {
+            background: $color__white;
+            padding: 25px;
+            @include flex_box(column, center, center, 30px);
+            text-align: center;
+            box-shadow: 0px 15px 77px -5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+
+            & .advantage__title {
+                font-family: $font__regular;
+                color: $color__purple;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.017em;
+
+            }
+
+            ;
+
+            & .advantage__detail {
+                font-family: $font__regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: -0.017em;
+                color: rgba(0, 0, 0, 0.56);
+
+
+            }
+        }
+    }
+}
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section: 30px;
+
+    .container__advantage {
+        padding: $padding_top_bott_section $padding__section;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container__advantage {
+        & .advantages {
+            grid-gap: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container__advantage {
+        & .advantages {
+            grid-gap: 100px;
+            grid-template-columns: repeat(auto-fill, 280px);
+            justify-content: center !important;
+            align-items: center;
+        }
+    }
+}

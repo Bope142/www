@@ -1,0 +1,39 @@
+@import 'mixin.scss';
+
+.container__videos {
+    background: $color__bg_section;
+    height: auto;
+    overflow: hidden;
+    flex: none;
+    padding: $padding_top_bott_section $padding__section;
+    @include grid_display(repeat(2,1fr),150px);
+    justify-content: center;
+    & .video{
+      @include flex_box(column,center,center,0);
+      position: relative;
+      overflow: hidden;
+      height:auto;
+    };
+    & svg{
+       @include center_abosulte(50%,50%,-50%,-50%)
+    }
+}
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section:20px;
+    .container__videos {
+      padding: $padding_top_bott_section $padding__section;
+      grid-gap:50px !important;
+    }
+}
+@media only screen and (max-width: 900px) {
+    $padding__section:20px;
+    .container__videos {
+      padding: $padding_top_bott_section $padding__section;
+      grid-gap:30px !important;
+      justify-content: center;
+      grid-template-columns:1fr;
+    }
+}
+

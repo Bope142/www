@@ -1,0 +1,130 @@
+@import 'mixin.scss';
+@import 'variable.scss';
+.container__header {
+    display: flex;
+    align-items: center;
+    z-index: 1550000;
+    flex: none;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+    background-image: linear-gradient(101.76deg, #AB0071 -0.41%, #4C7CF7 108.85%);
+    position: fixed;
+    width: 100%;
+
+    & .menu__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: none;
+        width: 100%;
+
+        & .header__navigation {
+            display: flex;
+            @include space__link;
+
+            // @include center_abosulte(50%,50%,-50%,-50%);
+            & .nav__link {
+                @include link__style;
+                position: relative;
+            }
+        }
+
+        ;
+
+        & .header_infos {
+            display: flex;
+            align-items: center;
+            grid-gap: 20px;
+            justify-content: center;
+
+            & #deconnexion {
+                background: $color__white;
+                color: $color__purple;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-gap: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+.mobile-menu {
+    display: none;
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.mobile-menu span {
+    width: 100%;
+    height: 4px;
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.mobile-menu span::before,
+.mobile-menu span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #FFFFFF;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mobile-menu span::before {
+    transform: translateY(-10px);
+}
+
+.mobile-menu span::after {
+    transform: translateY(10px);
+}
+
+.menu-active span {
+    background-color: transparent;
+}
+
+.menu-active span::before {
+    transform: translateY(0px) rotateZ(45deg);
+}
+
+.menu-active span::after {
+    transform: translateY(0px) rotateZ(-45deg);
+}
+
+@import 'testimonial.scss';
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section: 20px;
+    .container__header {
+        padding: 0 $padding__section;
+        & .menu__header {
+            grid-gap: 0;
+        }
+    }
+    .container__section {
+        padding: 50px $padding__section;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .menu__header {
+        display: none !important;
+    }
+}

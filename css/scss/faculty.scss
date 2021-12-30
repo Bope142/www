@@ -1,0 +1,123 @@
+@import 'mixin.scss';
+
+.container__faculty {
+    @include config__section;
+    background: $color__white;
+
+    & .title__section__container p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.017em;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    & .facultys {
+        @include grid_display(repeat(2, 1fr), 100px);
+        justify-content: center;
+
+        & .faculty__box {
+            @include flex_box(row, flex-start, strecth, 20px);
+            background: $color__white;
+            overflow: hidden !important;
+            position: relative;
+            height: auto;
+            box-shadow: 0px 15px 77px -5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+
+            & .border__left {
+                flex: none;
+                background: $color__purple;
+                height: 100%;
+                width: 8px;
+            }
+
+            ;
+
+            & svg {
+                @include center_abosulte(50%, 7px, 0, -50%)
+            }
+        }
+    }
+}
+
+.faculty__details {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.icon__fac {
+    background: transparent;
+    height: 100%;
+    width: 50px;
+    flex: none;
+    overflow: hidden !important;
+
+    & img {
+        object-fit: cover;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+}
+
+.detail {
+    @include flex_box(column, flex-start, strecth, 20px);
+    padding: 5px;
+
+    & .faculty__name {
+        font-family: $font__Bold;
+        color: #000000;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.017em;
+
+    }
+
+    ;
+
+    & .faculty__infos {
+        text-align: justify;
+        font-family: $font__regular;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.017em;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section: 20px;
+
+    .container__faculty {
+        padding: $padding_top_bott_section $padding__section;
+
+        & .facultys {
+            @include grid_display(500px, 50px);
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container__faculty {
+        & .facultys {
+            @include grid_display(1fr, 50px);
+            justify-content: center;
+        }
+    }
+}
