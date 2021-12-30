@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activites</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/activite.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="container__header">
+                <div class="menu__header">
+                    <nav class="header__navigation">
+                        <a href="" class="nav__link">Acceuil</a>
+                        <a href="" class="nav__link select__page">Filieres</a>
+                        <a href="" class="nav__link">Programme Scolaire</a>
+                        <a href="" class="nav__link">Enseignants</a>
+                        <a href="" class="nav__link">Blog</a>
+                    </nav>
+                    <div class="header_infos">
+                        <a href="" class="btn" id="deconnexion">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 12L7 16V13H16V11H7V8L2 12Z" fill="#AB0071" />
+                                <path d="M13.001 2.99906C11.8185 2.99578 10.6471 3.22717 9.55474 3.67982C8.46233 4.13247 7.4706 4.79739 6.63699 5.63606L8.05099 7.05006C9.37299 5.72806 11.131 4.99906 13.001 4.99906C14.871 4.99906 16.629 5.72806 17.951 7.05006C19.273 8.37206 20.002 10.1301 20.002 12.0001C20.002 13.8701 19.273 15.6281 17.951 16.9501C16.629 18.2721 14.871 19.0011 13.001 19.0011C11.131 19.0011 9.37299 18.2721 8.05099 16.9501L6.63699 18.3641C8.33599 20.0641 10.596 21.0011 13.001 21.0011C15.406 21.0011 17.666 20.0641
+                            19.365 18.3641C21.065 16.6651 22.002 14.4051 22.002 12.0001C22.002 9.59506 21.065 7.33506 19.365 5.63606C18.5314 4.79739 17.5397 4.13247 16.4472 3.67982C15.3548 3.22717 14.1835 2.99578 13.001 2.99906V2.99906Z" fill="#AB0071" />
+                            </svg>
+                            Déconnexion
+                        </a>
+                        <a href="">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.79821 23.3125C13.7894 22.5833 17.2259 22.646 22.2236 23.338C22.5856 23.3904 22.9163 23.5721 23.1547 23.8494C23.3931 24.1267 23.5232 24.4809 23.5208 24.8466C23.5208 25.1966 23.4005 25.5364 23.1832 25.8018C22.8045 26.2646 22.4165 26.7197 22.0195 27.1668H23.9452C24.0662 27.0225 24.188 26.8752 24.3112 26.7257C24.7437 26.1953 24.9797 25.5317 24.9791 24.8473C24.9791 23.3708 23.9014 22.0984 22.4234 21.8942C17.3076 21.1862 13.7318 21.1184 8.58748 21.8702C7.09415 22.0882 6.02081 23.3803 6.02081 24.867C6.02081 25.5269 6.23592 26.1795 6.64352 26.7082C6.76383 26.8642 6.88269 27.0173 7.00081 27.1676H8.87988C8.5105 26.7253 8.15021 26.2756 7.79925 25.8186C7.59068 25.545 7.47817 25.2103 7.47915 24.8663C7.47915 24.081 8.04352 23.4226 8.79821 23.3125Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 16.2293C16.0745 16.2293 16.6434 16.1162 17.1742 15.8963C17.705 15.6764 18.1873 15.3542 18.5936 14.9479C18.9998 14.5417 19.3221 14.0594 19.542 13.5286C19.7618 12.9978 19.875 12.4289 19.875 11.8543C19.875 11.2798 19.7618 10.7109 19.542 10.1801C19.3221 9.64929 18.9998 9.16699 18.5936 8.76074C18.1873 8.35448 17.705 8.03222 17.1742 7.81236C16.6434 7.59249 16.0745 7.47933 15.5 7.47933C14.3397 7.47933 13.2269 7.94027 12.4064 8.76074C11.5859 9.58121 11.125 10.694 11.125 11.8543C11.125 13.0147 11.5859 14.1274 12.4064 14.9479C13.2269 15.7684 14.3397 16.2293 15.5 16.2293ZM15.5 17.6877C17.0471 17.6877 18.5308 17.0731 19.6248 15.9791C20.7187 14.8852 21.3333 13.4014 21.3333 11.8543C21.3333 10.3072 20.7187 8.8235 19.6248 7.72954C18.5308 6.63558 17.0471 6.021 15.5 6.021C13.9529 6.021 12.4692 6.63558 11.3752 7.72954C10.2812 8.8235 9.66666 10.3072 9.66666 11.8543C9.66666 13.4014 10.2812 14.8852 11.3752 15.9791C12.4692 17.0731 13.9529 17.6877 15.5 17.6877Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 28.6251C22.7486 28.6251 28.625 22.7487 28.625 15.5001C28.625 8.25144 22.7486 2.37508 15.5 2.37508C8.25134 2.37508 2.37499 8.25144 2.37499 15.5001C2.37499 22.7487 8.25134 28.6251 15.5 28.6251ZM15.5 30.0834C23.5544 30.0834 30.0833 23.5545 30.0833 15.5001C30.0833 7.44571 23.5544 0.916748 15.5 0.916748C7.44562 0.916748 0.916656 7.44571 0.916656 15.5001C0.916656 23.5545 7.44562 30.0834 15.5 30.0834Z" fill="white" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 33.3278C18.1124 33.3136 18.7002 33.0834 19.1592 32.6777C19.6182 32.2721 19.919 31.7171 20.0083 31.1111H14.8944C14.9863 31.7336 15.3011 32.3016 15.7804 32.7093C16.2597 33.1171 16.8708 33.3368 17.5 33.3278Z" fill="white" />
+                                <path d="M31.607 27.0568C30.6694 26.2211 29.8486 25.2629 29.1667 24.2082C28.4222 22.7524 27.9759 21.1625 27.8542 19.5318V14.7291C27.8502 14.1457 27.7982 13.5636 27.6986 12.9888C26.9334 12.8358 26.198 12.56 25.5208 12.1721C25.7789 13.0032 25.9101 13.8685 25.9097 14.7388V19.5416C26.0289 21.5307 26.5761 23.4708 27.5139 25.2291C28.1851 26.2927 28.9816 27.2719 29.8861 28.1457H4.98751C5.89207 27.2719 6.68851 26.2927 7.35973 25.2291C8.29755 23.4708 8.84473 21.5307 8.9639 19.5416V14.7291C8.95878 13.6039 9.17566 12.4888 9.6021 11.4475C10.0286 10.4063 10.6562 9.45942 11.4491 8.66109C12.242 7.86277 13.1846 7.22868 14.2229 6.79515C15.2612 6.36162 16.3748 6.13716 17.5 6.13461C19.1467 6.13593 20.7565 6.62291 22.1278 7.53461C21.9766 6.97946 21.8918 6.40835 21.875 5.83322V5.22072C20.8599 4.72135 19.7693 4.39287 18.6472 4.2485V3.0235C18.6472 2.67927 18.5105 2.34914 18.2671 2.10574C18.0237 1.86233 17.6935 1.72559 17.3493 1.72559C17.0051 1.72559 16.675 1.86233 16.4315 2.10574C16.1881 2.34914 16.0514 2.67927 16.0514 3.0235V4.29711C13.5389 4.65154 11.2395 5.90298 9.57758 7.82038C7.91571 9.73779 7.00363 12.1917 7.00973 14.7291V19.5318C6.88796 21.1625 6.44174 22.7524 5.69723 24.2082C5.02726 25.2605 4.21964 26.2185 3.29584 27.0568C3.19214 27.1479 3.10902 27.2601 3.05203 27.3858C2.99503 27.5115 2.96546 27.648 2.96529 27.786V29.1082C2.96529 29.3661 3.06772 29.6134 3.25004 29.7957C3.43237 29.978 3.67966 30.0804 3.93751 30.0804H30.9653C31.2231 30.0804 31.4704 29.978 31.6528 29.7957C31.8351 29.6134 31.9375 29.3661 31.9375 29.1082V27.786C31.9373 27.648 31.9078 27.5115 31.8508 27.3858C31.7938 27.2601 31.7107 27.1479 31.607 27.0568Z" fill="white" />
+                                <path d="M29.1667 10.6944C31.8514 10.6944 34.0278 8.518 34.0278 5.83328C34.0278 3.14856 31.8514 0.972168 29.1667 0.972168C26.482 0.972168 24.3056 3.14856 24.3056 5.83328C24.3056 8.518 26.482 10.6944 29.1667 10.6944Z" fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <span></span>
+                </div>
+            </header>
+            <section class="container__section">
+                <div class="section__search__bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path d="M21 3C11.621094 3 4 10.621094 4 20C4 29.378906 11.621094 37 21 37C24.710938 37 28.140625 35.804688 30.9375 33.78125L44.09375 46.90625L46.90625 44.09375L33.90625 31.0625C36.460938 28.085938 38 24.222656 38 20C38 10.621094 30.378906 3 21 3 Z M 21 5C29.296875 5 36 11.703125 36 20C36 28.296875 29.296875 35 21 35C12.703125 35 6 28.296875 6 20C6 11.703125 12.703125 5 21 5Z" fill="#0A0A09" />
+                    </svg>
+                    <input type="text" name="" id="" placeholder="Trouver une activité...">
+                    <a href="" class="btn">Rechercher</a>
+                </div>
+                <div class="section__activites">
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                    <div class="activite">
+                        <div class="activite__image">
+                            <img src="./images/Rectangle 7.png" alt="">
+                        </div>
+                        <div class="activite__infos">
+                            <h2 class="activite__title">TEAM BUILDIND</h2>
+                            <h3 class="activite__public">Pour toute l'ecole</h3>
+                            <p class="activite__details">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ducimus ratione excepturi esse magnam atque sit voluptatem incidunt doloribus?
+                            </p>
+                            <p class="activite__place">A Buhimba</p>
+                            <p class="activite__date">Mercredi 10 janvier 2021</p>
+                            <a href="" class="btn btn__album_activite">Album</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="see__all">Voir Plus</a>
+            </section>
+            <footer class="container__footer">
+                <div class="footer__wave">
+                    <svg viewBox="0 0 1440 455" fill="none" xmlns="http://www.w3.org/2000/svg" class="wave__footer linear__wave">
+                        <path d="M-252 43.2049C690.885 201.102 581.532 -97.388 1435.31 34.7812C2289.09 166.95 1416.68 455 1416.68 455H-23.9069L-252 43.2049Z" fill="url(#paint0_linear_5_328)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_5_328" x1="-569.87" y1="-332.647" x2="2044.02" y2="1219.03" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#AB0071" />
+                                <stop offset="1" stop-color="#4C7CF7" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg viewBox="0 0 1440 440" fill="none" xmlns="http://www.w3.org/2000/svg" class="wave__footer color__wave">
+                        <path d="M-252 43.2049C690.885 201.102 581.532 -97.388 1435.31 34.7812C2289.09 166.95 1416.68 455 1416.68 455H-23.9069L-252 43.2049Z" fill="url(#paint0_linear_5_329)" />
+                        <path d="M-252 43.2049C690.885 201.102 581.532 -97.388 1435.31 34.7812C2289.09 166.95 1416.68 455 1416.68 455H-23.9069L-252 43.2049Z" fill="#2E2C2C" />
+                        <defs>
+                            <linearGradient id="paint0_linear_5_329" x1="-569.87" y1="-332.647" x2="2044.02" y2="1219.03" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#AB0071" />
+                                <stop offset="1" stop-color="#4C7CF7" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__infos">
+                        <div class="footer__contact">
+                            <h1>SHULE</h1>
+                            <span class="links__contact">
+                                <a href="">
+                                    <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.3594 0H1.64062C1.07021 0 0.609375 0.46084 0.609375 1.03125V24.75C0.609375 25.3204 1.07021 25.7812 1.64062 25.7812H25.3594C25.9298 25.7812 26.3906 25.3204 26.3906 24.75V1.03125C26.3906 0.46084 25.9298 0 25.3594 0ZM22.3816 7.5249H20.3224C18.7078 7.5249 18.3952 8.29189 18.3952 9.41982V11.9045H22.2495L21.7468 15.7942H18.3952V25.7812H14.3766V15.7975H11.0153V11.9045H14.3766V9.03633C14.3766 5.70732 16.4101 3.89297 19.3813 3.89297C20.8058 3.89297 22.0271 3.99932 22.3849 4.04766V7.5249H22.3816Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24.96 0H1.04C0.46475 0 0 0.446875 0 1V24C0 24.5531 0.46475 25 1.04 25H24.96C25.5352 25 26 24.5531 26 24V1C26 0.446875 25.5352 0 24.96 0ZM7.71225 21.3031H3.8545V9.37187H7.71225V21.3031ZM5.785 7.74063C5.34276 7.74063 4.91045 7.61453 4.54274 7.37828C4.17504 7.14204 3.88844 6.80626 3.71921 6.41339C3.54997 6.02053 3.50569 5.58824 3.59196 5.17118C3.67824 4.75412 3.8912 4.37103 4.20391 4.07035C4.51662 3.76966 4.91504 3.56489 5.34878 3.48194C5.78252 3.39898 6.2321 3.44156 6.64068 3.60428C7.04926 3.76701 7.39847 4.04258 7.64417 4.39615C7.88986 4.74971 8.021 5.16539 8.021 5.59062C8.01775 6.77812 7.01675 7.74063 5.785 7.74063ZM22.1552 21.3031H18.3007V15.5C18.3007 14.1156 18.2747 12.3375 16.2955 12.3375C14.2902 12.3375 13.9815 13.8438 13.9815 15.4V21.3031H10.1302V9.37187H13.8287V11.0031H13.8807C14.3942 10.0656 15.652 9.075 17.5305 9.075C21.437 9.075 22.1552 11.5469 22.1552 14.7594V21.3031Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9965 8.66482C10.6094 8.66482 8.66141 10.6129 8.66141 13C8.66141 15.3871 10.6094 17.3352 12.9965 17.3352C15.3836 17.3352 17.3316 15.3871 17.3316 13C17.3316 10.6129 15.3836 8.66482 12.9965 8.66482ZM25.9985 13C25.9985 11.2048 26.0148 9.42584 25.914 7.63387C25.8132 5.55247 25.3384 3.70522 23.8164 2.18319C22.2911 0.657911 20.4472 0.186343 18.3658 0.0855244C16.5706 -0.0152937 14.7917 0.000967347 12.9998 0.000967347C11.2046 0.000967347 9.42566 -0.0152937 7.63373 0.0855244C5.55236 0.186343 3.70515 0.661163 2.18315 2.18319C0.657899 3.70847 0.186339 5.55247 0.0855228 7.63387C-0.0152934 9.42909 0.000967329 11.208 0.000967329 13C0.000967329 14.792 -0.0152934 16.5742 0.0855228 18.3661C0.186339 20.4475 0.661151 22.2948 2.18315 23.8168C3.7084 25.3421 5.55236 25.8137 7.63373 25.9145C9.42891 26.0153 11.2078 25.999 12.9998 25.999C14.7949 25.999 16.5739 26.0153 18.3658 25.9145C20.4472 25.8137 22.2944 25.3388 23.8164 23.8168C25.3416 22.2915 25.8132 20.4475 25.914 18.3661C26.0181 16.5742 25.9985 14.7952 25.9985 13ZM12.9965 19.6703C9.30533 19.6703 6.32637 16.6912 6.32637 13C6.32637 9.30876 9.30533 6.32974 12.9965 6.32974C16.6877 6.32974 19.6666 9.30876 19.6666 13C19.6666 16.6912 16.6877 19.6703 12.9965 19.6703ZM19.9398 7.61436C19.078 7.61436 18.382 6.91839 18.382 6.05656C18.382 5.19473 19.078 4.49876 19.9398 4.49876C20.8016 4.49876 21.4976 5.19473 21.4976 6.05656C21.4978 6.2612 21.4577 6.46389 21.3795 6.65301C21.3013 6.84212 21.1866 7.01396 21.0419 7.15866C20.8972 7.30337 20.7254 7.41811 20.5363 7.4963C20.3471 7.5745 20.1445 7.61462 19.9398 7.61436Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.3214 0.75H2.67857C1.19978 0.75 0 1.92578 0 3.375V22.625C0 24.0742 1.19978 25.25 2.67857 25.25H22.3214C23.8002 25.25 25 24.0742 25 22.625V3.375C25 1.92578 23.8002 0.75 22.3214 0.75ZM19.5926 9.43437C19.6038 9.5875 19.6038 9.74609 19.6038 9.89922C19.6038 14.6406 15.9208 20.1039 9.19085 20.1039C7.11495 20.1039 5.18973 19.5133 3.57143 18.4961C3.86719 18.5289 4.15179 18.5398 4.45312 18.5398C6.16629 18.5398 7.73995 17.9711 8.99554 17.0086C7.38839 16.9758 6.03795 15.9422 5.57478 14.5203C6.13839 14.6023 6.64621 14.6023 7.22656 14.4547C5.55246 14.1211 4.29688 12.6773 4.29688 10.9328V10.8891C4.78237 11.157 5.35156 11.3211 5.94866 11.343C5.44667 11.0157 5.03515 10.5718 4.75082 10.0508C4.4665 9.52977 4.31821 8.94788 4.3192 8.35703C4.3192 7.68984 4.49777 7.07734 4.81585 6.54688C6.6183 8.72344 9.32478 10.1453 12.3605 10.2984C11.8415 7.86484 13.6998 5.89062 15.9319 5.89062C16.9866 5.89062 17.9353 6.32266 18.6049 7.02266C19.4308 6.86953 20.2232 6.56875 20.9263 6.15859C20.6529 6.98984 20.0781 7.68984 19.3192 8.13281C20.0558 8.05625 20.7701 7.85391 21.4286 7.575C20.9319 8.29141 20.3069 8.92578 19.5926 9.43437Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="footer__nav">
+                            <span class="navigation">
+                                <h3 class="nav__tiltle">A PROPOS</h3>
+                                <ul>
+                                    <li><a href="">Histoire</a></li>
+                                    <li><a href="">Objectifs</a></li>
+                                    <li><a href="">Vision</a></li>
+                                    <li><a href="">Evenements</a></li>
+                                    <li><a href="">Job</a></li>
+                                    <li><a href="">Contacts</a></li>
+                                </ul>
+                            </span>
+                            <span class="navigation">
+                                <h3 class="nav__tiltle">SOLUTIONS</h3>
+                                <ul>
+                                    <li><a href="">Histoire</a></li>
+                                    <li><a href="">Objectifs</a></li>
+                                    <li><a href="">Vision</a></li>
+                                </ul>
+                            </span>
+                            <span class="navigation">
+                                <h3 class="nav__tiltle">RESSOURCES</h3>
+                                <ul>
+                                    <li><a href="">Histoire</a></li>
+                                    <li><a href="">Objectifs</a></li>
+                                    <li><a href="">Vision</a></li>
+                                    <li><a href="">Evenements</a></li>
+                                    <li><a href="">Job</a></li>
+                                    <li><a href="">Contacts</a></li>
+                                </ul>
+                            </span>
+                            <span class="navigation" id="termes">
+                                <h3 class="nav__tiltle">TERMES ET CONDITIONS</h3>
+                                <ul>
+                                    <li><a href="">Termes et conditions</a></li>
+                                    <li><a href="">Politique de confidentialité</a></li>
+                                    <li><a href="">Utilisation de cookie</a></li>
+                                </ul>
+                                <div class="footer__icons">
+                                    <img src="./images/ico__footer.svg" alt="">
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <p>Copyrights 2021 Tous droits reservés</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>
