@@ -172,6 +172,18 @@
     .nav__links {
         display: none !important;
     }
+    .header__text{
+        justify-content: center !important;
+        align-items:center !important;
+        text-align: center;
+        height: 100%;
+        *{
+            align-self:center !important;
+        }
+    }
+    .header__nav{
+        display: none;
+    }
 }
 
 // responsive
@@ -194,7 +206,7 @@
     }
 
     .header__text {
-        margin-left: 5px;
+        // margin-left: 5px;
         z-index: 1000;
     }
 

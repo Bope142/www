@@ -59,7 +59,7 @@
         padding: $padding_top_bott_section $padding__section;
 
         & .album__view {
-            @include grid_display(repeat(3, 1fr), 25px);
+            @include grid_display(repeat(auto-fill, 220px), 25px);
             justify-content: center;
         }
     }
@@ -68,8 +68,8 @@
 @media only screen and (max-width: 900px) {
     .container__album {
         & .album__view {
-            @include grid_display(repeat(2, 1fr), 25px);
-            justify-content: center;
+            // @include grid_display(repeat(2, 1fr), 25px);
+            // justify-content: center;
         }
     }
 }
@@ -77,8 +77,8 @@
 @media only screen and (max-width: 700px) {
     .container__album {
         & .album__view {
-            @include grid_display(1fr, 25px);
-            justify-content: center;
+            // @include grid_display(1fr, 25px);
+            // justify-content: center;
         }
     }
 }

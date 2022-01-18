@@ -127,4 +127,14 @@
     .menu__header {
         display: none !important;
     }
+    .header__text{
+        align-items:center !important;
+        justify-content: center !important;
+        display: flex;
+        text-align: center;
+        & *{
+             text-align: center;
+             align-self:center;
+        }
+    }
 }

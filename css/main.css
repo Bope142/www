@@ -90,6 +90,10 @@ li {
   margin: 0;
 }
 
+textarea {
+  resize: vertical;
+}
+
 @font-face {
   font-family: "Inter-Regular";
   src: url("../fonts/Inter-Regular.ttf");
