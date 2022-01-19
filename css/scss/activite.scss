@@ -59,7 +59,7 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
     border-radius: 16px;
-
+    overflow: hidden;
     & .activite__image {
         flex: none;
         height: 40%;
@@ -184,8 +184,7 @@
 @media only screen and (max-width: 600px) {
     .container__section {
         & .section__activites {
-            display: flex;
-            flex-direction: column;
+            grid-template-columns:300px;
             grid-gap: 50px;
         }
     }
@@ -200,5 +199,10 @@
 @media only screen and (max-width: 330px) {
     .btn__album_activite {
         margin-bottom: 15px;
+    }
+    .container__section {
+        & .section__activites {
+            grid-template-columns:250px;
+        }
     }
 }

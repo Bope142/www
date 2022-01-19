@@ -221,6 +221,17 @@
   .menu__header {
     display: none !important;
   }
+
+  .header__text {
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+    text-align: center;
+  }
+  .header__text * {
+    text-align: center;
+    align-self: center;
+  }
 }
 .container__section {
   display: flex;

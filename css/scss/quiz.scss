@@ -19,7 +19,7 @@
 }
 
 .section__content {
-    width: 100%;
+ width: 100%  !important;
     display: flex;
     flex-direction: column;
     grid-gap: 25px;
@@ -55,6 +55,7 @@
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-gap: 25px;
+
 }
 
 .quiz {
@@ -67,7 +68,7 @@
 
 .question {
     flex: none;
-    height: 100px;
+    height: auto;
     background: transparent;
     border-radius: 3px;
     border: 1px solid $color__purple;
@@ -77,7 +78,7 @@
 
 .menu__left_question {
     width: 100%;
-    background: rgba(0, 0, 0, 0.03);
+   background: rgb(247, 247, 247);
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -86,9 +87,17 @@
     & span {
         display: flex;
         grid-gap: 50px;
+        font-family: 'Inter-Bold';
     }
 }
 
+.point{
+    font-family: 'Inter-Bold';
+    color: rgb(150, 14, 111);
+}
+.la__question{
+    font-family: 'Inter-Light' !important;
+}
 .menu__time__question {
     flex: none;
     width: 100px;
@@ -101,11 +110,12 @@
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        background: rgba(0, 0, 0, 0.03);
+        background: rgb(247, 247, 247);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $color__purple;
+        font-family: 'Inter-Bold';
+    color: rgb(150, 14, 111);
     }
 }
 
@@ -115,13 +125,13 @@
     grid-gap: 50px;
 
     & .challenge {
-        background: orangered;
+        background: rgb(226, 226, 226);
         height: 70px;
         display: flex;
-        grid-gap: 50px;
+        grid-gap: 10px;
 
         & .challenge__color_box {
-            background: orange;
+            background: rgb(159, 18, 131);
             flex: none;
             width: 80px;
         }
@@ -130,11 +140,32 @@
 
         & .challenge__text {
             display: flex;
-            align-items: center;
+            margin-top: 10px;
+            font-family: 'Inter-Bold';
         }
     }
-}
 
+}
+ .nextchallenge{
+        border:1px solid $color__purple;
+        align-self:flex-end;
+
+    }
+.purlple-color{
+      background: rgb(159, 18, 131) !important;
+}
+.whitecolor{
+      background: rgb(145, 121, 137) !important;
+}
+.bluecolor{
+      background: rgb(138, 173, 255) !important;
+}
+.whiteop{
+      background: rgb(201, 180, 195) !important;
+}
+.blueop{
+      background: rgb(141, 161, 214) !important;
+}
 .question__answers {
     display: flex;
     padding: 5px;
@@ -148,6 +179,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        & h2{
+            font-family: 'Inter-Bold';
+            color: rgb(67, 79, 120);
+        }
     }
 
     ;
@@ -158,11 +193,14 @@
         height: 80px;
         border-radius: 50%;
         overflow: hidden;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgb(247, 247, 247);
         align-self: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: 'Inter-Bold';
+    color: rgb(150, 14, 111);
+    font-size: 0.7rem;
     }
 
     ;
@@ -238,11 +276,70 @@
                 };
                 &::before {
                     /* ...existing styles */
-                    background-color: red;
                     transform-origin: bottom left;
                     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
                 }
             }
         }
     }
+}
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section: 20px;
+
+    .container__section {
+        padding: $padding_top_bott_section $padding__section;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+   .quiz__header {
+        display: flex;
+        flex-direction: column;
+        grid-gap:25px;
+
+}
+.quiz__infos{
+    flex-direction: column !important;
+    width: 100%;
+}
+.section__quiz {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+}
+.question__challenge {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    grid-gap: 50px;
+}
+.question__answers {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items:center;
+    flex: none;
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+    grid-gap:25px;
+}
+.btn__replay {
+        height: auto !important;
+        flex: none;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+}
+}
+
+@media only screen and (max-width: 330px) {
+  .question__challenge {
+    grid-template-columns: 250px;
+}
+
 }
