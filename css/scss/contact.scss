@@ -11,6 +11,7 @@
         height: auto;
         grid-gap: 30px;
         padding: 15px;
+        width: 100%;
     }
 }
 
@@ -20,8 +21,8 @@
   grid-gap:25px;
   justify-content: center;
   flex-wrap: wrap;
-
   align-self: center;
+  width: 100%;
 }
 .contact__info{
   display: flex;
@@ -44,6 +45,8 @@
   & .title__info{
     color: $color__purple;
     text-align: center;
+    font-weight: bold;
+    font-family: 'Inter-Bold';
   }
   & .detail__info{
      text-align: center;
@@ -63,7 +66,7 @@
       width: 100%;
     }
   }
-  & .form__contact{
+  & .contact__form{
     padding: 20px;
     overflow: hidden;
     box-shadow: 0px 15px 77px -5px rgba(0, 0, 0, 0.08);
@@ -73,6 +76,8 @@
     & input,textarea{
       padding: 10px;
       outline: none;
+      font-family: 'Inter-Regular';
+      border:3px solid rgba(0, 0, 0, 0.1);
     }
 
     & .btn__send{
@@ -81,4 +86,44 @@
       align-self:center;
     }
   }
+}
+
+// responsive
+@media only screen and (max-width: 1300px) {
+    $padding__section: 20px;
+
+    .container__section {
+        padding: $padding_top_bott_section $padding__section;
+    }
+
+}
+@media only screen and (max-width: 900px) {
+   .content__contact{
+  grid-template-columns:repeat(auto-fill, 300px);
+}
+.form__contact{
+ display: flex;
+ flex-direction: column;
+ width: 100% !important;
+ & .cart{
+  height: 300px;
+  flex: none;
+ }
+ }
+}
+@media only screen and (max-width: 400px) {
+   .content__contact{
+  grid-template-columns:repeat(auto-fill, 250px);
+}
+.form__contact{
+ padding: 0;
+ flex: none;
+ & .cart{
+  height: 300px;
+  flex: none;
+ }
+ & .contact__form{
+  padding:  5px !important;
+ }
+ }
 }
